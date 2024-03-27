@@ -47,6 +47,8 @@ struct RouteDetail: View {
                 Marker("Halte 1", coordinate: coordinate1)
                 Marker("Halte 2", coordinate: coordinate2)
                 Marker("Halte 3", coordinate: coordinate3)
+                Marker("Station", coordinate: CLLocationCoordinate2D.cisaukStation)
+
             }
             .mapControls {
                 MapCompass()
@@ -75,7 +77,18 @@ struct RouteDetail: View {
 }
 
 struct ContentView: View {
+    @State var from: String = "Contoh Departure"
+    @State var to: String   = "Contoh Destination"
+    
     var body: some View {
+        VStack {
+            TextField("Departure point", text: $from)
+            Text($from.wrappedValue)
+            
+            TextField("Destination", text: $to)
+            Text($to.wrappedValue)
+        }
+        
         NavigationStack {
             List (routes) { r in
                 NavigationLink {

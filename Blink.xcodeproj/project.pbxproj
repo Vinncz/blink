@@ -14,6 +14,17 @@
 		20F5B72D2BB1631C00746DBB /* BlinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B72C2BB1631C00746DBB /* BlinkTests.swift */; };
 		20F5B7372BB1631C00746DBB /* BlinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B7362BB1631C00746DBB /* BlinkUITests.swift */; };
 		20F5B7392BB1631C00746DBB /* BlinkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B7382BB1631C00746DBB /* BlinkUITestsLaunchTests.swift */; };
+		20F5B74B2BB16B5800746DBB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B74A2BB16B5800746DBB /* Location.swift */; };
+		20F5B74E2BB16F2A00746DBB /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B74D2BB16F2A00746DBB /* Route.swift */; };
+		20F5B7502BB1700300746DBB /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B74F2BB1700300746DBB /* BusStop.swift */; };
+		20F5B7522BB170E000746DBB /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B7512BB170E000746DBB /* Bus.swift */; };
+		20F5B7562BB17CCF00746DBB /* RouteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B7552BB17CCF00746DBB /* RouteList.swift */; };
+		20F5B7582BB17CFD00746DBB /* RouteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B7572BB17CFD00746DBB /* RouteController.swift */; };
+		20F5B75B2BB17DEA00746DBB /* RouteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B75A2BB17DEA00746DBB /* RouteRepository.swift */; };
+		20F5B75D2BB17E0600746DBB /* BusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B75C2BB17E0600746DBB /* BusRepository.swift */; };
+		20F5B75F2BB17E2000746DBB /* BusStopRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B75E2BB17E2000746DBB /* BusStopRepository.swift */; };
+		20F5B7612BB17F9000746DBB /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B7602BB17F9000746DBB /* RepositoryProtocol.swift */; };
+		20F5B7632BB2B9AB00746DBB /* GlobalValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B7622BB2B9AB00746DBB /* GlobalValueProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		20F5B7322BB1631C00746DBB /* BlinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F5B7362BB1631C00746DBB /* BlinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkUITests.swift; sourceTree = "<group>"; };
 		20F5B7382BB1631C00746DBB /* BlinkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20F5B74A2BB16B5800746DBB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		20F5B74D2BB16F2A00746DBB /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		20F5B74F2BB1700300746DBB /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		20F5B7512BB170E000746DBB /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		20F5B7552BB17CCF00746DBB /* RouteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteList.swift; sourceTree = "<group>"; };
+		20F5B7572BB17CFD00746DBB /* RouteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteController.swift; sourceTree = "<group>"; };
+		20F5B75A2BB17DEA00746DBB /* RouteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRepository.swift; sourceTree = "<group>"; };
+		20F5B75C2BB17E0600746DBB /* BusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRepository.swift; sourceTree = "<group>"; };
+		20F5B75E2BB17E2000746DBB /* BusStopRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopRepository.swift; sourceTree = "<group>"; };
+		20F5B7602BB17F9000746DBB /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		20F5B7622BB2B9AB00746DBB /* GlobalValueProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValueProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +116,11 @@
 		20F5B71A2BB1631A00746DBB /* Blink */ = {
 			isa = PBXGroup;
 			children = (
+				20F5B7592BB17DDC00746DBB /* Repositories */,
+				20F5B7492BB16B3C00746DBB /* ViewModels */,
+				20F5B7482BB16B3200746DBB /* Controllers */,
+				20F5B7472BB16B2700746DBB /* Views */,
+				20F5B7462BB16B1E00746DBB /* Models */,
 				20F5B71B2BB1631A00746DBB /* BlinkApp.swift */,
 				20F5B71D2BB1631A00746DBB /* ContentView.swift */,
 				20F5B71F2BB1631C00746DBB /* Assets.xcassets */,
@@ -125,6 +152,60 @@
 				20F5B7382BB1631C00746DBB /* BlinkUITestsLaunchTests.swift */,
 			);
 			path = BlinkUITests;
+			sourceTree = "<group>";
+		};
+		20F5B7462BB16B1E00746DBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B74C2BB16ECC00746DBB /* Extensions */,
+				20F5B74D2BB16F2A00746DBB /* Route.swift */,
+				20F5B74F2BB1700300746DBB /* BusStop.swift */,
+				20F5B7512BB170E000746DBB /* Bus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20F5B7472BB16B2700746DBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B7552BB17CCF00746DBB /* RouteList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20F5B7482BB16B3200746DBB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B7572BB17CFD00746DBB /* RouteController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		20F5B7492BB16B3C00746DBB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20F5B74C2BB16ECC00746DBB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B74A2BB16B5800746DBB /* Location.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20F5B7592BB17DDC00746DBB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B75A2BB17DEA00746DBB /* RouteRepository.swift */,
+				20F5B75C2BB17E0600746DBB /* BusRepository.swift */,
+				20F5B75E2BB17E2000746DBB /* BusStopRepository.swift */,
+				20F5B7602BB17F9000746DBB /* RepositoryProtocol.swift */,
+				20F5B7622BB2B9AB00746DBB /* GlobalValueProvider.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +338,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F5B75B2BB17DEA00746DBB /* RouteRepository.swift in Sources */,
+				20F5B7522BB170E000746DBB /* Bus.swift in Sources */,
+				20F5B75D2BB17E0600746DBB /* BusRepository.swift in Sources */,
+				20F5B7502BB1700300746DBB /* BusStop.swift in Sources */,
 				20F5B71E2BB1631A00746DBB /* ContentView.swift in Sources */,
+				20F5B7612BB17F9000746DBB /* RepositoryProtocol.swift in Sources */,
+				20F5B7582BB17CFD00746DBB /* RouteController.swift in Sources */,
+				20F5B74E2BB16F2A00746DBB /* Route.swift in Sources */,
+				20F5B74B2BB16B5800746DBB /* Location.swift in Sources */,
+				20F5B75F2BB17E2000746DBB /* BusStopRepository.swift in Sources */,
+				20F5B7632BB2B9AB00746DBB /* GlobalValueProvider.swift in Sources */,
+				20F5B7562BB17CCF00746DBB /* RouteList.swift in Sources */,
 				20F5B71C2BB1631A00746DBB /* BlinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
