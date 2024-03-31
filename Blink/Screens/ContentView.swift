@@ -54,6 +54,7 @@ struct RouteDetail: View {
                 MapCompass()
                 MapUserLocationButton()
                 MapPitchToggle()
+
                 
             }
             .sheet(isPresented: $binded, content: {
