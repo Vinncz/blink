@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203C58122BB5724D0048D902 /* BusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C58112BB5724D0048D902 /* BusViewModel.swift */; };
+		20A604642BBAA0A600C1C8A0 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A604632BBAA0A600C1C8A0 /* HomeScreen.storyboard */; };
+		20A604662BBAA7B100C1C8A0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A604652BBAA7B100C1C8A0 /* MapView.swift */; };
 		20F5B71C2BB1631A00746DBB /* BlinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B71B2BB1631A00746DBB /* BlinkApp.swift */; };
 		20F5B71E2BB1631A00746DBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B71D2BB1631A00746DBB /* ContentView.swift */; };
 		20F5B7202BB1631C00746DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F5B71F2BB1631C00746DBB /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		203C58112BB5724D0048D902 /* BusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusViewModel.swift; sourceTree = "<group>"; };
+		20A604632BBAA0A600C1C8A0 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
+		20A604652BBAA7B100C1C8A0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		20F5B7182BB1631A00746DBB /* Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F5B71B2BB1631A00746DBB /* BlinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkApp.swift; sourceTree = "<group>"; };
 		20F5B71D2BB1631A00746DBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				20F5B7552BB17CCF00746DBB /* RouteList.swift */,
+				20A604632BBAA0A600C1C8A0 /* HomeScreen.storyboard */,
+				20A604652BBAA7B100C1C8A0 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 		20F5B7492BB16B3C00746DBB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				203C58112BB5724D0048D902 /* BusViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -312,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A604642BBAA0A600C1C8A0 /* HomeScreen.storyboard in Resources */,
 				20F5B7232BB1631C00746DBB /* Preview Assets.xcassets in Resources */,
 				20F5B7202BB1631C00746DBB /* Assets.xcassets in Resources */,
 			);
@@ -341,9 +351,11 @@
 				20F5B75B2BB17DEA00746DBB /* RouteRepository.swift in Sources */,
 				20F5B7522BB170E000746DBB /* Bus.swift in Sources */,
 				20F5B75D2BB17E0600746DBB /* BusRepository.swift in Sources */,
+				203C58122BB5724D0048D902 /* BusViewModel.swift in Sources */,
 				20F5B7502BB1700300746DBB /* BusStop.swift in Sources */,
 				20F5B71E2BB1631A00746DBB /* ContentView.swift in Sources */,
 				20F5B7612BB17F9000746DBB /* RepositoryProtocol.swift in Sources */,
+				20A604662BBAA7B100C1C8A0 /* MapView.swift in Sources */,
 				20F5B7582BB17CFD00746DBB /* RouteController.swift in Sources */,
 				20F5B74E2BB16F2A00746DBB /* Route.swift in Sources */,
 				20F5B74B2BB16B5800746DBB /* Location.swift in Sources */,
