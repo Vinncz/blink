@@ -20,14 +20,14 @@ public class RouteRepository : RepositoryProtocol {
                     busRepoInstance.get("BSDL002"),
                 ], 
                 stops: [
-                    busStopRepoInstance.get("The ICE 5"),
-                    busStopRepoInstance.get("CBD Barat 1"),
-                    busStopRepoInstance.get("CBD Barat 2"),
-                    busStopRepoInstance.get("AEON Mall Lobby"),
-                    busStopRepoInstance.get("AEON Mall 2"),
-                    busStopRepoInstance.get("CBD Timur 2"),
-                    busStopRepoInstance.get("Nava Park 1"),
-                    busStopRepoInstance.get("Greencove")
+                    BusStopRepository.get("The ICE 5"),
+                    BusStopRepository.get("CBD Barat 1"),
+                    BusStopRepository.get("CBD Barat 2"),
+                    BusStopRepository.get("AEON Mall Lobby"),
+                    BusStopRepository.get("AEON Mall 2"),
+                    BusStopRepository.get("CBD Timur 2"),
+                    BusStopRepository.get("Nava Park 1"),
+                    BusStopRepository.get("Greencove")
                 ]
             )
         ]

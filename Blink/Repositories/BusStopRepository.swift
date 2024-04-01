@@ -1,11 +1,11 @@
 import Foundation
 import MapKit
 
-public class BusStopRepository : RepositoryProtocol {
+public class BusStopRepository {
     
     public typealias AssociatedModel = BusStop
     
-    private var busStops : [BusStop] = [
+    private static var busStops : [BusStop] = [
         BusStop(name: "SML Plaza",       location: CLLocationCoordinate2D.office),
         BusStop(name: "The ICE 5",       location: CLLocationCoordinate2D(latitude: -6.2974197, longitude: 106.6361500)),
         BusStop(name: "CBD Barat 1",     location: CLLocationCoordinate2D(latitude: -6.2996199, longitude: 106.6412893)),
@@ -17,16 +17,16 @@ public class BusStopRepository : RepositoryProtocol {
         BusStop(name: "Greencove",       location: CLLocationCoordinate2D(latitude: -6.3003170, longitude: 106.6598802)),
     ]
     
-    public func getAll() -> [BusStop] {
+    public static func getAll() -> [BusStop] {
         return busStops
     }
     
-    public func get(_ id: Int) -> BusStop {
-        return self.busStops[0]
+    public static func get(_ id: Int) -> BusStop {
+        return busStops[0]
     }
     
-    public func get(_ name: String) -> BusStop {
-        return self.busStops.first { busStop in
+    public static func get(_ name: String) -> BusStop {
+        return busStops.first { busStop in
             if busStop.name == name {
                 return true
             }
@@ -35,20 +35,20 @@ public class BusStopRepository : RepositoryProtocol {
         }!
     }
     
-    public func update(_ newObject: BusStop) {
-        guard let index = self.busStops.firstIndex(where: { $0.name == newObject.name }) else {
+    public static func update(_ newObject: BusStop) {
+        guard let index = busStops.firstIndex(where: { $0.name == newObject.name }) else {
             return
         }
         
-        self.busStops[index] = newObject
+        busStops[index] = newObject
     }
     
-    public func delete(_ targetObject: BusStop) {
-        guard let index = self.busStops.firstIndex(where: { $0.name == targetObject.name }) else {
+    public static func delete(_ targetObject: BusStop) {
+        guard let index = busStops.firstIndex(where: { $0.name == targetObject.name }) else {
             return
         }
         
-        self.busStops.remove(at: index)
+        busStops.remove(at: index)
     }
     
 }
