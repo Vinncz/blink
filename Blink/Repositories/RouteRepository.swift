@@ -1,8 +1,7 @@
 import Foundation
+import MapKit
 
 public class RouteRepository : RepositoryProtocol {
-    
-    public typealias AssociatedModel = Route
 
     private var busRepoInstance: BusRepository
     private var busStopRepoInstance: BusStopRepository
@@ -13,13 +12,18 @@ public class RouteRepository : RepositoryProtocol {
         self.busRepoInstance = BusRepository()
         
         self.routes = [
-            Route(
+            Route (
                 name: "AEON - The ICE - The Breeze", 
                 buses: [
                     busRepoInstance.get("BSDL001"),
                     busRepoInstance.get("BSDL002"),
                 ], 
+                /* Caution! Kalau beda sequence BusStop-nya, maka akan berbeda juga rute yang ditampilkan! */
                 stops: [
+                    BusStopRepository.get("The Breeze"),
+                    BusStopRepository.get("CBD Timur 1"),
+                    BusStopRepository.get("AEON Mall Lobby"),
+                    BusStopRepository.get("AEON Mall 2"),
                     BusStopRepository.get("The ICE 5"),
                     BusStopRepository.get("CBD Barat 1"),
                     BusStopRepository.get("CBD Barat 2"),
@@ -27,8 +31,49 @@ public class RouteRepository : RepositoryProtocol {
                     BusStopRepository.get("AEON Mall 2"),
                     BusStopRepository.get("CBD Timur 2"),
                     BusStopRepository.get("Nava Park 1"),
-                    BusStopRepository.get("Greencove")
-                ]
+                    BusStopRepository.get("Greencove"),
+                ],
+                loopBack: true
+            ),
+            Route (
+                name: "Station - Office",
+                buses: [],
+                /* Caution! Agar subset dari rute keseluruhan sama-sama melewati jalan yang sama, maka bus stop-nya juga harus sama! */
+                stops: [
+//                    BusStop(
+//                        name: "Office",
+//                        location: CLLocationCoordinate2D.office
+//                    ),
+//                    BusStop(
+//                        name: "Station",
+//                        location: CLLocationCoordinate2D.cisaukStation
+//                    ),
+                    BusStopRepository.get("The ICE 5").visibleOnMap(),
+                    BusStopRepository.get("CBD Barat 1"),
+                    BusStopRepository.get("CBD Barat 2"),
+                    BusStopRepository.get("AEON Mall Lobby"),
+                    BusStopRepository.get("AEON Mall 2"),
+                    BusStopRepository.get("CBD Timur 2"),
+                    BusStopRepository.get("Nava Park 1"),
+                    BusStopRepository.get("Greencove"),
+                    BusStopRepository.get("The Breeze").visibleOnMap()
+                ],
+                loopBack: false
+            ),
+            Route (
+                name: "Avani - Sektor 1.3", 
+                buses: [], 
+                stops: [
+                    BusStop (
+                        name: "Studento 2", 
+                        location: CLLocationCoordinate2D(latitude: -6.296203, longitude: 106.64206)
+                    ).visibleOnMap(),
+                    BusStop (
+                        name: "SML Plaza", 
+                        location: CLLocationCoordinate2D(latitude: -6.302215, longitude: 106.65121)
+                    ).visibleOnMap()
+                ], 
+                loopBack: false
             )
         ]
     }

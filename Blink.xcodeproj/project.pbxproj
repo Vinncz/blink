@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		203C58122BB5724D0048D902 /* BusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C58112BB5724D0048D902 /* BusViewModel.swift */; };
+		205435E12BBBD9750096806F /* BlinkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205435E02BBBD9750096806F /* BlinkMapView.swift */; };
+		205435E42BBBE12B0096806F /* BlinkMapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205435E32BBBE12B0096806F /* BlinkMapViewCoordinator.swift */; };
+		20A604A42BBB20A500C1C8A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A604A32BBB20A500C1C8A0 /* ContentView.swift */; };
+		20A604A62BBB214E00C1C8A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A604A52BBB214E00C1C8A0 /* Assets.xcassets */; };
 		20F5B71C2BB1631A00746DBB /* BlinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B71B2BB1631A00746DBB /* BlinkApp.swift */; };
-		20F5B71E2BB1631A00746DBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B71D2BB1631A00746DBB /* ContentView.swift */; };
-		20F5B7202BB1631C00746DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F5B71F2BB1631C00746DBB /* Assets.xcassets */; };
 		20F5B7232BB1631C00746DBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F5B7222BB1631C00746DBB /* Preview Assets.xcassets */; };
 		20F5B72D2BB1631C00746DBB /* BlinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B72C2BB1631C00746DBB /* BlinkTests.swift */; };
 		20F5B7372BB1631C00746DBB /* BlinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B7362BB1631C00746DBB /* BlinkUITests.swift */; };
@@ -47,10 +49,12 @@
 
 /* Begin PBXFileReference section */
 		203C58112BB5724D0048D902 /* BusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusViewModel.swift; sourceTree = "<group>"; };
+		205435E02BBBD9750096806F /* BlinkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkMapView.swift; sourceTree = "<group>"; };
+		205435E32BBBE12B0096806F /* BlinkMapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkMapViewCoordinator.swift; sourceTree = "<group>"; };
+		20A604A32BBB20A500C1C8A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20A604A52BBB214E00C1C8A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F5B7182BB1631A00746DBB /* Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F5B71B2BB1631A00746DBB /* BlinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkApp.swift; sourceTree = "<group>"; };
-		20F5B71D2BB1631A00746DBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		20F5B71F2BB1631C00746DBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F5B7222BB1631C00746DBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20F5B7282BB1631C00746DBB /* BlinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F5B72C2BB1631C00746DBB /* BlinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkTests.swift; sourceTree = "<group>"; };
@@ -95,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		205435E22BBBE06E0096806F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				205435E32BBBE12B0096806F /* BlinkMapViewCoordinator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		20F5B70F2BB1631A00746DBB = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +130,16 @@
 		20F5B71A2BB1631A00746DBB /* Blink */ = {
 			isa = PBXGroup;
 			children = (
+				205435E22BBBE06E0096806F /* Helpers */,
 				20F5B7592BB17DDC00746DBB /* Repositories */,
 				20F5B7492BB16B3C00746DBB /* ViewModels */,
 				20F5B7482BB16B3200746DBB /* Controllers */,
 				20F5B7472BB16B2700746DBB /* Views */,
 				20F5B7462BB16B1E00746DBB /* Models */,
 				20F5B71B2BB1631A00746DBB /* BlinkApp.swift */,
-				20F5B71D2BB1631A00746DBB /* ContentView.swift */,
-				20F5B71F2BB1631C00746DBB /* Assets.xcassets */,
 				20F5B7212BB1631C00746DBB /* Preview Content */,
+				20A604A32BBB20A500C1C8A0 /* ContentView.swift */,
+				20A604A52BBB214E00C1C8A0 /* Assets.xcassets */,
 			);
 			path = Blink;
 			sourceTree = "<group>";
@@ -171,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				20F5B7552BB17CCF00746DBB /* RouteList.swift */,
+				205435E02BBBD9750096806F /* BlinkMapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,8 +329,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A604A62BBB214E00C1C8A0 /* Assets.xcassets in Resources */,
 				20F5B7232BB1631C00746DBB /* Preview Assets.xcassets in Resources */,
-				20F5B7202BB1631C00746DBB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,11 +357,13 @@
 			files = (
 				20F5B75B2BB17DEA00746DBB /* RouteRepository.swift in Sources */,
 				20F5B7522BB170E000746DBB /* Bus.swift in Sources */,
+				20A604A42BBB20A500C1C8A0 /* ContentView.swift in Sources */,
 				20F5B75D2BB17E0600746DBB /* BusRepository.swift in Sources */,
 				203C58122BB5724D0048D902 /* BusViewModel.swift in Sources */,
+				205435E42BBBE12B0096806F /* BlinkMapViewCoordinator.swift in Sources */,
 				20F5B7502BB1700300746DBB /* BusStop.swift in Sources */,
-				20F5B71E2BB1631A00746DBB /* ContentView.swift in Sources */,
 				20F5B7612BB17F9000746DBB /* RepositoryProtocol.swift in Sources */,
+				205435E12BBBD9750096806F /* BlinkMapView.swift in Sources */,
 				20F5B7582BB17CFD00746DBB /* RouteController.swift in Sources */,
 				20F5B74E2BB16F2A00746DBB /* Route.swift in Sources */,
 				20F5B74B2BB16B5800746DBB /* Location.swift in Sources */,

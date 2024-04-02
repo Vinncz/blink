@@ -15,6 +15,8 @@ public class BusStopRepository {
         BusStop(name: "CBD Timur 2",     location: CLLocationCoordinate2D(latitude: -6.3011506, longitude: 106.6487003)),
         BusStop(name: "Nava Park 1",     location: CLLocationCoordinate2D(latitude: -6.2999254, longitude: 106.6485412)),
         BusStop(name: "Greencove",       location: CLLocationCoordinate2D(latitude: -6.3003170, longitude: 106.6598802)),
+        BusStop(name: "The Breeze",      location: CLLocationCoordinate2D(latitude: -6.3014721, longitude: 106.6530547)),
+        BusStop(name: "CBD Timur 1",     location: CLLocationCoordinate2D(latitude: -6.3034440, longitude: 106.6500529)),
     ]
     
     public static func getAll() -> [BusStop] {
